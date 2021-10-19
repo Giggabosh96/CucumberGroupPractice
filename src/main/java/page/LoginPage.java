@@ -20,7 +20,7 @@ public class LoginPage {
 	WebElement PASSWORD_ELEMENT;
 	@FindBy(how = How.XPATH, using = "//*[@class='btn btn-success block full-width']")
 	WebElement SIGNIN_BUTTON_ELEMENT;
-
+	
 	public void insertUserName(String userName) {
 		USERNAME_ELEMENT.sendKeys(userName);
 	}
@@ -39,4 +39,9 @@ public class LoginPage {
 		PASSWORD_ELEMENT.sendKeys(password);
 		SIGNIN_BUTTON_ELEMENT.click();
 	}
+	
+	public String verifyDashboardPageTitle() {
+		return driver.getTitle();
+	}
+	
 }

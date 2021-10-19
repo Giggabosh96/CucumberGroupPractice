@@ -7,9 +7,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features=".\\src\\test\\java\\features\\TF_Login.feature",
+		features="classpath:features",
 		glue="steps",
-//		tags="",
+		tags="@Gibran",
 		monochrome=true,
 		dryRun=false,
 		plugin= {

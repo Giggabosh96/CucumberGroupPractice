@@ -3,29 +3,41 @@
     "line": 1,
     "elements": [
       {
-        "comments": [
+        "before": [
           {
-            "line": 3,
-            "value": "#\tBackground:"
-          },
-          {
-            "line": 4,
-            "value": "#\tGiven User is on the Techfios login page"
+            "result": {
+              "duration": 2560934000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinition.beforeRun()"
+            }
           }
         ],
-        "line": 6,
-        "name": "User should be able to login with valid credentials",
+        "line": 15,
+        "name": "User should be able to input different username and password",
         "description": "",
-        "id": "techfios-login-functionality-validation;user-should-be-able-to-login-with-valid-credentials",
+        "id": "techfios-login-functionality-validation;user-should-be-able-to-input-different-username-and-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 705692800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinition.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 209843300,
+              "duration": 1068256500,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "User is on the Techfios login page",
             "match": {
               "location": "LoginStepDefinition.user_is_on_the_Techfios_login_page()"
@@ -34,10 +46,10 @@
           },
           {
             "result": {
-              "duration": 4496800,
+              "duration": 128480200,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "User enters username as \"demo@techfios.com\"",
             "match": {
               "arguments": [
@@ -48,14 +60,17 @@
               ],
               "location": "LoginStepDefinition.user_enters_username_as(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 83900,
+              "duration": 74097500,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "User enters password as \"abc123\"",
             "match": {
               "arguments": [
@@ -66,14 +81,17 @@
               ],
               "location": "LoginStepDefinition.user_enters_password_as(String)"
             },
+            "matchedColumns": [
+              1
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 60000,
+              "duration": 1342421900,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "User clicks on signin button",
             "match": {
               "location": "LoginStepDefinition.user_clicks_on_signin_button()"
@@ -82,15 +100,21 @@
           },
           {
             "result": {
-              "duration": 25600,
+              "duration": 329846800,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "User should land on dashboard page",
             "match": {
               "location": "LoginStepDefinition.user_should_land_on_dashboard_page()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Gibran"
           }
         ]
       }
@@ -99,6 +123,6 @@
     "description": "",
     "id": "techfios-login-functionality-validation",
     "keyword": "Feature",
-    "uri": "./src/test/java/features/TF_Login.feature"
+    "uri": "features/Other_TF_Login.feature"
   }
 ]
